@@ -1,12 +1,12 @@
 var path = require('path');
-var appPath = path.resolve(__dirname, './src/index.js');
+var appPath = path.resolve(__dirname, './test/index.js');
 var buildPath = path.resolve(__dirname, './build');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
-  entry: appPath,//整个页面的入口文件
+  entry: appPath,
   output: {
-    path: buildPath,//打包输出的地址
-    filename: "bundle.js",//输出的文件名称
+    path: buildPath,
+    filename: "bundle.js",
   },
   module: {
     rules: [
